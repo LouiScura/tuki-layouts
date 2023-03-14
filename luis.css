@@ -46,13 +46,18 @@ h1 {
 }
 
 .contenedor-imagen {
-    margin: 0px 30px;
+    display: block;
+    width: 40%;
+}
+
+.contenedor-imagen img {
+    width: 100%;
 }
 
 .padre-flex {
     display: flex;
     padding-bottom: 20px;
-    border-bottom: 3px solid yellow
+    border-bottom: 3.5px solid yellow
 }
 
 .contenedor-texto h2 {
