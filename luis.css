@@ -12,28 +12,78 @@ h1 {
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
     background-color: cadetblue;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-}
-
-.flex-child {
-    margin: auto;
+    padding: 20px;
 }
 
 .flex-container > div {
     display: flex;
-    flex-wrap: inherit;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: auto;
 }
 
-/* .box {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+.flex-child h3 {
+    margin: 0px;
+}
+
+.flex-child p {
+    margin: 10px 0px;
+}
+
+.flex-child {
+    display: block;
+    width: 45%;
+}
+
+/* segundo layout */
+
+.box{
     padding: 20px;
-} */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contenedor-imagen {
+    margin: 0px 30px;
+}
+
+.padre-flex {
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 3px solid yellow
+}
+
+.contenedor-texto h2 {
+    margin: 0px 75px;
+}
+
+.contenedor-texto p {
+    margin: 45px 75px;
+}
+
+button {
+    margin: 45px 75px;
+    border: 3px solid yellow;
+    width: 40%;
+    height: 65px;
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+.hijo-flex{
+    display: flex;
+    margin: 20px 0px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid yellow
+}
+
 
 
 
