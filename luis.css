@@ -9,7 +9,6 @@ h1 {
 }
 
 
-
 .flex-container {
     display: flex;
     background-color: cadetblue;
@@ -37,6 +36,30 @@ h1 {
     width: 45%;
 }
 
+@media (max-width: 550px){
+    
+    .flex-container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+
+    .flex-container > div {
+        max-width: 100%;
+    }
+
+    .flex-child {
+        width: 100%;
+        height: 100%;
+    }
+
+    .flex-child iframe {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+
 /* segundo layout */
 
 .box{
@@ -57,7 +80,7 @@ h1 {
 .padre-flex {
     display: flex;
     padding-bottom: 20px;
-    border-bottom: 3.5px solid yellow
+    border-bottom: 3.5px solid yellow;
 }
 
 .contenedor-texto h2 {
@@ -86,10 +109,70 @@ button:hover {
     display: flex;
     margin: 20px 0px;
     padding-bottom: 20px;
-    border-bottom: 3px solid yellow
+    border-bottom: 3px solid yellow;
 }
 
+@media (max-width: 550px) {
+    .box{
+        padding: 20px;
+    }
 
+    .padre-flex {
+        display: block;
+    }
+
+    .contenedor-imagen {
+        display: block;
+        width: 100%;
+    }
+
+    .contenedor-texto h2 {
+        margin: 0;
+    }
+
+    .contenedor-texto p {
+        margin: 0;
+    }
+
+    .contenedor-texto button {
+        margin: 0;
+        border: 3px solid yellow;
+        width: 40%;
+        height: 65px;
+        background-color: white;
+        color: black;
+        transition-duration: 0.4s;
+    }
+    
+    .hijo-flex {
+        display: block;
+    }
+
+        .contenedor-imagen {
+            display: block;
+            width: 100%;
+        }
+    
+        .contenedor-texto h2 {
+            margin: 0;
+        }
+    
+        .contenedor-texto p {
+            margin: 0;
+        }
+    
+        .contenedor-texto button {
+            margin: 0;
+            border: 3px solid yellow;
+            width: 40%;
+            height: 65px;
+            background-color: white;
+            color: black;
+            transition-duration: 0.4s;
+        }
+
+    }
+}
 
 
 
